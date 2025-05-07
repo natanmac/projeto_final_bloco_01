@@ -3,6 +3,9 @@ package projeto_final_bloco_01;
 import java.io.IOException;
 import java.util.Scanner;
 
+import projeto_final_bloco_01.model.FoneComFio;
+import projeto_final_bloco_01.model.FoneSemFio;
+
 public class Menu {
 
 	public static void main(String[] args) {
@@ -10,6 +13,12 @@ public class Menu {
 		Scanner sc = new Scanner(System.in);
 		
 		int option;
+		
+		FoneComFio fcf = new FoneComFio("Samsumg PRO X", "Preto", 150, 1, 1, "Intra auricular", true);
+		fcf.visualizar();
+		
+		FoneSemFio fsf = new FoneSemFio("Phillips", "Branco", 200, 2, 2, "Intra auricular", 4);
+		fsf.visualizar();
 		
 		while(true) {
 			
